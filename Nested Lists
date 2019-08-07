@@ -1,0 +1,13 @@
+if __name__ == '__main__':
+
+
+    marksheet = []
+    for _ in range(0,int(input())):
+        marksheet.append([input(), float(input())])
+    #print(marksheet)
+    second_highest = sorted(list(set([marks for name, marks in marksheet])))[1]
+    
+    #set() sorts in ascending order
+    #sorted() sorts in alphabetical order
+    #join() concatenates string
+    print('\n'.join([a for a,b in sorted(marksheet) if b == second_highest]))
