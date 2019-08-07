@@ -1,0 +1,7 @@
+#print the numbers before the input in a list
+if __name__ == '__main__':
+    n = int(input())
+
+print(*range(1, n+1), sep='')
+#* "turns an array to list"
+
