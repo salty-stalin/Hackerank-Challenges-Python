@@ -1,0 +1,12 @@
+if __name__ == '__main__':
+
+
+    n = int(input())
+    arr = list(map(int, input().split())) #function returns a list of the results after applying the given function to each item of a given iterable (list, tuple etc.)
+    zes = max(arr)
+    i=0
+    while(i<n):
+        if zes ==max(arr):
+            arr.remove(max(arr))
+        i+=1
+    print(max(arr))
